@@ -45,3 +45,29 @@ When the special code is then encountered in the frame it then gets chopped up a
 This allows to reover frameson error, but comes at high tramsmission costs.
 
 
+# The data link layer
+
+The data link layer deals with the Detection and errors in the transmission of frames.
+The sender can add a id and a checksum variant
+(like [crc](https://en.wikipedia.org/wiki/Cyclic_redundancy_check)
+to a SDU(Service Data Unit - The data we are sending)
+
+### Finite-state machinge
+
+an [FSM](https://en.wikipedia.org/wiki/Finite-state_machine)
+is a model that can be in exactly one state at any given time.
+It is usefull for moddeling The reviever/sender view seperatly and reasoning about them.
+
+### The Id
+
+The simplest form is the [alternating bit protocol](https://en.wikipedia.org/wiki/Alternating_bit_protocol)
+which waits for the response of each Data request.
+The single bit is used to avoid problems caused by missing/faulty responses.
+
+The use of [sliding windows](todo) then allows __Pipelining__,
+which allow the sender to transmit frames without waiting for each response.
+
+## Piggibacking
+
+Because Protocols often need to send data in both directions, they use piggibacking to pair acknowledgment with the data.
+This  reduces overhead subst.
