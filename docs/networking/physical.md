@@ -45,3 +45,10 @@ When the special code is then encountered in the frame it then gets chopped up a
 This allows to reover frameson error, but comes at high tramsmission costs.
 
 
+### Virtual lans
+
+Logical Subnet in a switch or physical network (layer 2).
+Allows to split up network by ensuring vlan-enabled switches do not route frames in other vlans.
+Allows for VERY high speed, since layer 2 switches can operate vollduplex and collision free.
+Allows for dynamic changing of vlans, without a physical change.
+
