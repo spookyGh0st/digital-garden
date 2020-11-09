@@ -54,4 +54,11 @@ In the later the next hop is calculated and stored if a package to an unknown ad
 [computing forwarding tables](computing_forwarding_tables.md)
 
 
-The lat
+## flat addresses
+
+When working with a flat addressing scheme each host and network node has a uniqe address (mac address)
+This forces the router toknow the path for each address.
+
+A hirachical Addressing scheme groups addresses under a name (e.g.city).
+When the router looks up an adress, it then only checks this group and forwards it there.
+The rest is handled by local routers.
