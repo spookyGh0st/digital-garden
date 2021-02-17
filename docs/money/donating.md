@@ -4,6 +4,7 @@ Since I'm german and I believe in donating locally, most of those are in germany
 international:
 - https://www.amnesty.org/
 - https://www.apopo.org/en
+- https://sea-watch.org/
 
 german:
 - https://netzpolitik.org/
